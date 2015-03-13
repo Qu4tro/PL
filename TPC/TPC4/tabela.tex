@@ -1,0 +1,38 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{TPC4}
+\author{Xavier Francisco}
+\date{May 2015}
+
+\begin{document}
+
+\maketitle
+
+\section{Tabela LL(1)}
+
+\begin{table}
+    \begin{tabular}{|l|l|l|ll|l|l|l|l|l|}
+    \hline
+    N U T / T     & \$ (0) & "." (2) & "(" (3) & ")" (4) & ";" (5) & pal (6) & num (7) & "," (8) & NOTAS (1) \\ \hline
+    Pauta (9)     & ~      & ~       & ~       & ~       & ~       & ~       & ~       & ~       & 1         \\ \hline
+    Cabeça (10)   & ~      & ~       & ~       & ~       & ~       & ~       & ~       & ~       & 2         \\ \hline
+    Corpo (11)    & ~      & ~       & ~       & ~       & ~       & 3       & ~       & ~       & ~         \\ \hline
+    Aluno (12)    & ~      & ~       & ~       & ~       & ~       & 4       & ~       & ~       & ~         \\ \hline
+    Alunos (13)   & ~      & 5       & ~       & ~       & 6       & ~       & ~       & ~       & ~         \\ \hline
+    IdAl (14)     & ~      & ~       & ~       & ~       & ~       & 7       & ~       & ~       & ~         \\ \hline
+    Notas (15)    & ~      & ~       & ~       & ~       & ~       & ~       & 8       & ~       & ~         \\ \hline
+    Nota (16)     & ~      & ~       & ~       & ~       & ~       & ~       & 9       & ~       & ~         \\ \hline
+    LstNotas (17) & ~      & ~       & ~       & 10      & ~       & ~       & ~       & 11      & ~         \\ \hline
+    \$ (0)        & ac     & ~       & ~       & ~       & ~       & ~       & ~       & ~       & ~         \\ \hline \hline
+    "." (2)       & ~      & skip    & ~       & ~       & ~       & ~       & ~       & ~       & ~         \\ \hline
+    "(" (3)       & ~      & ~       & skip    & ~       & ~       & ~       & ~       & ~       & ~         \\ \hline
+    ")" (4)       & ~      & ~       & ~       & skip    & ~       & ~       & ~       & ~       & ~         \\ \hline
+    ";" (5)       & ~      & ~       & ~       & ~       & skip    & ~       & ~       & ~       & ~         \\ \hline
+    pal (6)       & ~      & ~       & ~       & ~       & ~       & skip    & ~       & ~       & ~         \\ \hline
+    num (7)       & ~      & ~       & ~       & ~       & ~       & ~       & skip    & ~       & ~         \\ \hline
+    "," (8)       & ~      & ~       & ~       & ~       & ~       & ~       & ~       & skip    & ~         \\ \hline
+    NOTAS (1)     & ~      & ~       & ~       & ~       & ~       & ~       & ~       & ~       & skip      \\ \hline
+    \end{tabular}
+\end{table}
+\end{document}

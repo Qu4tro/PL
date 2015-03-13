@@ -1,0 +1,55 @@
+a)
+
+LA(p0) = BTASK
+LA(p1) = BTASK
+LA(p2) = id
+LA(p3) = id
+LA(p4) = id
+LA(p5) = id
+LA(p6) = CREDITO
+LA(p7) = DEBITO
+LA(p8) = num
+LA(p9) = id
+LA(p10) = str
+
+b)
+
+|            | BTASK | ETASK | CREDITO | DEBITO | ';' | '.' | id     | num | str |
+| ---------- | ----- | ----- | ------- | ------ | --- | --- | ------ | --- | --- |
+| Transacoes | p0    |       |         |        |     |     |        |     |     |
+| Cabec      | p1    |       |         |        |     |     |        |     |     |
+| Movimentos |       |       |         |        |     |     | p2, p3 |     |     |
+| Move       |       |       |         |        |     |     | p4     |     |     |
+| ContaDest  |       |       |         |        |     |     | p5     |     |     |
+| Sinal      |       |       | p6      | p7     |     |     |        |     |     |
+| Quant      |       |       |         |        |     | p8  |        |     |     |
+| Ordenante  |       |       |         |        | p9  |     |        |     |     |
+| Descr      |       |       |         |        |     |     | p10    |     |     |
+
+c)
+
+    O conflito é no movimentos onde há duas produções numa só célula na tabela, ou seja na linha Movimentos e na coluna id. Isto é um conflito, pois o programa como só tem lookahead de 1 token(pois estamos a trabalhar com LL(1)) e um não-terminal tem duas produções com o mesmo lookahead e por isso não consegue decidir qual é a produção que é necessária ser usada.
+
+Para corrigir alterava a produção p2 para ficar:
+
+p2: Movimentos --> MOVIMENTOS Move ','
+p3:              | Movimentos Move "."
+
+Assim o LA(p2) seria este novo terminal MOVIMENTOS e o LA(p3) continuaria id. Sendo diferentes mais nada nesta gramática faria conflito.
+
+d)
+
+
+g)
+
+Poderia ser alterada o não-terminal e Quant, Ordenante, Descr, ContaDest
+
+Ficaria:
+
+p0: Transacoes --> Cabec Movimentos ETASK
+p1: Cabec      --> BTASK data
+p2: Movimentos --> Move ’.’
+p3:              | Movimentos Move ’.’
+p4: Move       --> id ’;’ Sinal ’;’ num ’;’ id ’;’ str
+P5: Sinal      --> CREDITO
+p6:              | DEBITO

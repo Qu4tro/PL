@@ -1,0 +1,20 @@
+digraph e3 {
+
+    NULL -> S;
+    NULL [style="invis"];
+            
+    S -> S1 [label=ε];
+    S1 -> Z1 [label=a];
+    Z1 -> Z [label=ε];
+
+    S -> S2 [label=ε];
+    S2 -> S3 [label=ε];
+    S3 -> Z2 [label=a];
+    Z2 -> Z3 [label=ε];
+    Z3 -> Z [label=b];
+
+    Z3 -> S2 [label=ε]
+    S2 -> Z3 [label=ε]
+      
+ }
+        

@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<processos>
+  <processo id="13662">
+    <pasta>582</pasta>
+    <data>1909-05-12</data>
+    <nome>Abel Almeida</nome>
+    <pai>Antonio Almeida</pai>
+    <mae>Teresa Sousa</mae>
+    <obs/>
+  </processo>
+  <processo id="13117">
+    <pasta>569</pasta>
+    <data>1867-05-23</data>
+    <nome>Abel Barroso</nome>
+    <pai>Antonio Barroso</pai>
+    <mae>Maria Jose Barroso</mae>
+    <obs>Bento Barroso,Tio Paterno. Proc.31052. Domingos Alvares ,Tio Materno. Proc.102.</obs>
+  </processo>
+  <processo id="13429">
+    <pasta>576</pasta>
+    <data>1896-11-28</data>
+    <nome>Abel Augusto</nome>
+    <pai>Francisco Oliveira</pai>
+    <mae>Antonia Rosa</mae>
+    <obs>Jose Antonio, Irmao. Proc.5020.</obs>
+  </processo>
+  <processo id="13567">
+    <pasta>579</pasta>
+    <data>1904-05-27</data>
+    <nome>Abel Gomes</nome>
+    <pai>Antonio Gomes</pai>
+    <mae>Ana Sequeira</mae>
+    <obs/>
+  </processo>
+</processos>

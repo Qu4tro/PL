@@ -1,0 +1,14 @@
+a)
+
+e2 é uma liguagem que começa sempre com um a, seguido por ou um b ou um c seguido por um d e depois 0 ou mais e.
+
+b)
+
+
+c)
+Não são equivalentes. "cde" corresponde a e3 e não corresponde a e2. Todas as strings correspondentes a e2 têm de começar por um "a".
+
+
+d)
+("/"?[^\/]*)*
+

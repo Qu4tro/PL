@@ -1,0 +1,32 @@
+P = {
+
+Z = familias
+
+familias  = familia
+          | familias familia
+
+familia   = FAMILIA pai mae casamento filhos
+
+pai       = PAI str "," str date
+
+mae       = MAE str "," str date
+
+date      = inteiro "-" inteiro "-" inteiro
+
+casamento = CASAMAENTO str inteiro
+
+filhos    = FILHOS filhos1 "."
+
+filhos1   = 
+          | filho filhos2
+
+filhos2   = 
+          | filhos2 "," filho
+
+filho     = str
+
+}
+
+T = {FAMILIA, PAI, MAE, CASAMENTO, str, inteiro, "-", ",", "."}
+N = {familias, familia, pai, mae, date, casamento, filhos, filhos1, filhos2, filho}
+S = {Z}

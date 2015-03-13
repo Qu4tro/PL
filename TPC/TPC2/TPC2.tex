@@ -1,0 +1,44 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{Desafio nº2}
+\author{Xavier Francisco a67725}
+\date{March 2015}
+
+
+\begin{document}
+
+    \maketitle
+
+    Desenvolva em FLex uma Analisador Léxico para ler Lista do tipo:
+    
+    
+    \begin{verbatim}
+        INICIO 1,23 , 344, 5678 FIM
+        Inicio agora, esta, aquela, outra Fim
+        inicio 1,um , 2,dois , 7,sete fim
+    \end{verbatim}
+    
+    escritas de acordo com a Gramática abaixo
+     
+    \begin{verbatim}     
+        1: Frase --> INICIO Lista FIM     
+        2: Lista --> Elem     
+        3:           |  Elem "," Cauda     
+        4: Cauda --> Lista     
+        5: Elem  --> pal     
+        6:            |  num 
+    \end{verbatim}
+     
+    e escrever o código de todos os Símbolos Terminais reconhecidos de acordo com a seguinte tabela de converso:
+     
+    \begin{verbatim}     
+        #define INIC   5     
+        #define FIM    6     
+        #define Virg   7     
+        #define pal    8     
+        #define num    9 
+    \end{verbatim}
+    
+
+\end{document}

@@ -1,0 +1,78 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{tpc1}
+\author{Xavier Francisco}
+\date{March 2015}
+
+\begin{document}
+
+
+%---------------------------------------------------------------------------
+\section{Expressões Regulares e Autómatos}
+Considere as seguintes ERs:
+
+    $e1\ =\ a\ b^{+}\ +\ a\ (c\ +\ d)^{+}\ b$
+    
+    $e2\ =\ c\ b^{+}\ +\ a\ b^{+}\ c$
+    
+    $e3\ =\ c\ (\varepsilon\ +\ a)\ b^{+}\ c$
+
+
+Responda, então, às seguintes questões:
+\begin{description}
+  \item[a)] usando a respectiva \emph{cadeia de derivação}, diga se a frase "\texttt{acdb}" pertence àlinguagem gerada por $e1$.
+  
+      $e1\ =\ a\ b^{+}\ +\ a\ (c\ +\ d)^{+}\ b$
+      
+      $e1\ = a\ (c\ +\ d)^{+}\ b$
+      
+      $e1\ = a\ c\  (c\ +\ d)^{*}\ b$
+      
+      $e1\ = a\ c\ d\ b$
+      
+    Sim, a frase "\texttt{acdb}" pertence à linguagem gerada por $e1$.
+
+  
+  \item[b)] construa informalmente o Autómato Determinista equivalente a $e1$.
+  \\
+  \\
+  \\
+  \\
+  \\
+  \\
+  \\
+  \\
+  \\
+  \\
+  \\
+  \\
+  \\
+  \item[c)] diga, justificando, se $e2$ e $e3$  são equivalentes.
+  
+    $e3\ =\ c\ (\varepsilon\ +\ a)\ b^{+}\ c$
+  
+    $e3\ = (c\ +\ ca)\ b^{+}\ c$
+  
+    $e3\ = c\ b^{+}\ c +\ c\ a\ b^{+}\ c$  
+    
+    ou  
+    
+    $e3\ = c\ b^{+}\ c +\ c\ b^{+}\ c$  
+    
+    e2 não é equivalente a e3.
+  
+  \item[d)] modifique $e2$ de modo a permitir ter ainda frases: só com 1 $c$ ou só com $b$'s mas não admitir a fase nula $\varepsilon$.
+  
+    $e2\ =\ c\ b^{+}\ +\ a\ b^{+}\ c$
+  
+    $e2\ =\ (c\ +\ b^{+})\ +\ (c\ b^{+}\ +\ a\ b^{+}\ c)$
+  
+  
+  
+\end{description}
+
+%---------------------------------------------------------------------------
+
+
+\end{document}

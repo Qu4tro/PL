@@ -1,0 +1,24 @@
+e1          -> aas cs d_or_bcs
+
+aas         -> "a"
+             | aas "a"
+
+cs          -> 
+             | cs "c"
+
+d_ou_bcs    -> "d"
+             | bcs
+
+bcs         ->
+             | bcs "bc"
+
+
+
+
+e2          -> aas cs d_ou_aasbcs
+
+d_ou_aasbcs -> "d"
+             | aasbcs
+
+aasbcs      ->
+             | aasbcs aas "bc"

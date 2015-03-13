@@ -1,0 +1,41 @@
+[Z 
+    [famílias 
+        [familías 
+            [familia FAMILIA 
+                [pai PAI 
+                    [str "Luis"] "," [str "Sousa Alves"]
+                    [date [inteiro 1955] "-" [inteiro 06] "-" [inteiro 30]]]
+                [mae MAE 
+                    [str Rosa Maria] "," [str Silva] 
+                    [date [inteiro 1955] "-" [inteiro 08] "-" [inteiro 19]]]
+                [casamento CASAMENTO 
+                    [str "Braga"] 
+                    [inteiro 1980]]
+                [filhos "Filhos:" 
+                    
+                    [filhos1 
+                        [filho 
+                            [str "João"]] 
+                        [filhos2 
+                            [[filhos2 
+                                [filhos2 
+                                    [ ]] 
+                                "," [filho [str "Nuno"]]] 
+                                "," [filho [str "Miguel Maria"]]]]]
+                    "."
+                ]]]
+            [familia FAMILIA 
+                [pai PAI 
+                    [str "Manuel Paulo"] "," [str "Alves"]
+                    [date [inteiro 1956] "-" [inteiro 07] "-" [inteiro 20]]]
+                [mae MAE 
+                    [str Rosa Maria] "," [str Silva] 
+                    [date [inteiro 1958] "-" [inteiro 12] "-" [inteiro 19]]]
+                [casamento CASAMENTO 
+                    [str "Foz-do-Douro"] 
+                    [inteiro 1978]]
+                [filhos "Filhos:" 
+                    [filhos1 []
+                    "."
+
+                ]]]]]

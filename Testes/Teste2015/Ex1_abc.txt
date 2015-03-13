@@ -1,0 +1,31 @@
+a)
+
+[0-9]{3}\.[0-9]{3}\.[0-9]{3}\.[0-9]{3}
+
+b)
+
+[^@]+@.*\.[a-z]+
+
+c)
+
+As expressões regulares não são equivalentes.
+
+Enquanto que a primeira define strings do tipo:
+
+"keyKEyKEYkeY"
+"kEyKey"
+"Key"
+
+ou seja a string "key" (maiusculas ou minusculas) repetida 1 ou mais vezes.
+
+A segunda define do tipo:
+
+"kekKKekEkkYy"
+"KKEkkEYY"
+"kkkkEEEEKKK"
+
+ou seja uma string em que cada caracter pode ser ou "k", ou "e" ou "y" (maisculas ou minusculas).
+
+Um exemplo de contradição que podemos dar é simplesmente a string "k", que pertence à 2ºexpressão regular e que não pertence à 1º porque um "k" tem de ser acompanhado pelo "e" e pelo "y".
+
+

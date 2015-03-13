@@ -1,0 +1,3 @@
+elisa1;grego, troiano, historia;nada;qq coisa estranha;nada;PT
+elisa2;camoes, historia, lusiadas;SIM;outro lixo;nada;PT
+xico1;historia, poetas, camoes, pessoa;nada;bla-bla;PT;FR

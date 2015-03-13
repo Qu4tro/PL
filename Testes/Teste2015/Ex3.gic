@@ -1,0 +1,51 @@
+maquinaTabaco   --> registo
+
+registo         --> '(' REGISTO registoDiarios ')'
+
+registosDiarios --> registoDoDia
+                  | registosDiarios registoDoDia
+
+registoDia      --> '(' DIA dia ')'
+
+dia             --> date inicioDia registoVendas
+
+inicioDia       --> '(' INICIO definirStock dinheiroInicial ')'
+
+definirStock    --> '(' STOCK stockMarcas ')'
+
+stockMarcas     --> stockMarca
+                  | stockMarcas stockMarca
+
+stockMarca      --> '(' marca dinheiro ')'
+
+dinheiroInicial --> '(' DINHEIROINCIAL dinheiro ')'
+
+registoVendas   --> '(' VENDAS vendas ')'
+
+vendas          --> vendaTabaco
+                  | vendas vendaTabaco
+
+vendaTabaco     --> '(' marca dinheiro ')'
+
+
+Exemplo:
+
+(Registo 
+    (Dia 2015-06-06 
+        (Inicio 
+            (Stock (Camel 4.20€) (Chesterfield 4.00€) (Malboro 5.00€)) 
+            (DinheiroInicial 100.00€)
+        )
+        (Vendas 
+            (Camel 6.10€) 
+            (Chesterfield 4.00€)))
+    (Dia 2015-06-07
+        (Inicio 
+            (Stock (Camel 4.20€) (Chesterfield 4.00€) (Malboro 5.00€)) 
+            (DinheiroInicial 120.00€)
+        )
+        (Vendas 
+            (Camel 10.00€) 
+            (Chesterfield 5.00€)
+            (Malbro 7.00€)))
+)

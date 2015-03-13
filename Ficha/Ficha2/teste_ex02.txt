@@ -1,0 +1,4 @@
+Aqui vai um \ex que é \mt belo e que prova \cqd.
+Vou comprar este artigo porque é \bbb.
+Estou total/ de acordo.
+Este texto é ~suficiente.

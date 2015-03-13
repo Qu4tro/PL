@@ -1,0 +1,12 @@
+Eu=4
+Ele=95
+
+Eu: Olá bom dia, como te chamas?
+Ele: Bom dia, eu sou o Chico.
+Eu: E então de onde és tu?
+Ele: Eu sou do Porto
+Eu: E ele aí ao teu lado de onde é?
+Ele: Ele é de Leça.
+Eu: Obrigado pelas interessantes perguntas.
+Ele: Eu é que agradeço.
+

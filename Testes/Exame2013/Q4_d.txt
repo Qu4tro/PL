@@ -1,0 +1,19 @@
+Percursos -> PONTOS Pontos CAMINHOS Caminhos
+
+Pontos -> Ponto
+        | Pontos Ps
+
+Ponto -> id '(' X ',' Y, ')'
+
+X -> num
+Y -> num
+
+Caminhos -> Caminho 
+          | Caminhos Caminho
+
+Caminho -> id MAIORES num DIFICULD Grau PASSOS Ids
+
+Ids -> id
+     | Ids id
+
+Grau = FACIL | MEDIO | DIFICIL
